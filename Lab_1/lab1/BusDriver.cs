@@ -1,6 +1,16 @@
 ﻿namespace Lab_1;
 
-public class BusDriver: Driver
+public class BusDriver
 {
-    public override string SetLicense() => license = "D";
+    
+    public Driver Driver { get; set; }
+    public void SetLicense(string typeOfLicense)
+    {
+        Driver = Driver.GetInstance(typeOfLicense);
+    }
+    
+    public void DeleteLicense()
+    {
+        Driver = Driver.DeleteInstance();
+    }
 }
