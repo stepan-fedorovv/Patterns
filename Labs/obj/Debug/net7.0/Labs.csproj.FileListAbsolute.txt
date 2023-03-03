@@ -1,0 +1,15 @@
+C:\Users\stepr\RiderProjects\Lab_1\Labs\bin\Debug\net7.0\Labs.exe
+C:\Users\stepr\RiderProjects\Lab_1\Labs\bin\Debug\net7.0\Labs.deps.json
+C:\Users\stepr\RiderProjects\Lab_1\Labs\bin\Debug\net7.0\Labs.runtimeconfig.json
+C:\Users\stepr\RiderProjects\Lab_1\Labs\bin\Debug\net7.0\Labs.dll
+C:\Users\stepr\RiderProjects\Lab_1\Labs\bin\Debug\net7.0\Labs.pdb
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.csproj.AssemblyReference.cache
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.AssemblyInfoInputs.cache
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.AssemblyInfo.cs
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.csproj.CoreCompileInputs.cache
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.dll
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\refint\Labs.dll
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.pdb
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\Labs.genruntimeconfig.cache
+C:\Users\stepr\RiderProjects\Lab_1\Labs\obj\Debug\net7.0\ref\Labs.dll
