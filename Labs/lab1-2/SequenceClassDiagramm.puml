@@ -1,0 +1,15 @@
+﻿@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Program  -> ConcreteBuilder: new ConcreteBuilder()
+Program  -> Director: new Director(ConcreteBuilder)
+Program  -> Director: Construct()
+Director -> ConcreteBuilder: BuildBusChild()
+Director -> ConcreteBuilder: BuildBusAdult()
+Director -> ConcreteBuilder: BuildBusPreferential()
+Program  -> ConcreteBuilder: GetBusPassengers()
+Program  -> ConcreteBuilder: GetTaxiPassengers()
+
+@enduml

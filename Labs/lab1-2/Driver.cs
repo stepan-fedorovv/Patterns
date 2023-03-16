@@ -5,7 +5,7 @@ public class Driver
     private static Driver instance;
     public string License { get; set; }
 
-    protected Driver(string license)
+    public Driver(string license)
     {
         this.License = license;
     }

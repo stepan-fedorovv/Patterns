@@ -1,0 +1,41 @@
+﻿
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Builder{
+    +BuildBus(int, bool)
+    +BuildTaxi(int, bool)
+    +GetBusPassengers()
+    +GetTaxiPassengers()
+}
+
+
+class ConcreteBuilder{
+    +BuildBusChild(int age, bool preferential)
+    +BuildBusAdult(int age, bool preferential)
+    +BuildBusPreferential(bool preferential)
+}
+
+
+class Director{
+    +ConstructBus()
+    +ConstructTaxi()
+}
+
+class TaxiTrip
+{
+    +StartTrip()
+}
+
+class BusTrip
+{
+    +StartTrip()
+}
+
+ConcreteBuilder --|>Builder
+Director -> Builder
+ConcreteBuilder ..> TaxiTrip
+ConcreteBuilder ..> BusTrip
+
+
+@enduml

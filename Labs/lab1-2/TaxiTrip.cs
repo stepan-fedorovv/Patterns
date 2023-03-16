@@ -16,7 +16,7 @@ public class TaxiTrip
             Passenger passenger = new Passenger(i);
             Builder builder = new ConcreteBuilder(i);
             Director director = new Director(builder);
-            director.Construct(random.Next(20),random.Next(2)==1);
+            director.ConstructTaxi(random.Next(20));
             foreach (var j in builder.GetTaxiPassengers())
             {
                 Console.WriteLine(j);

@@ -17,7 +17,7 @@ public class BusTrip
             Passenger passenger = new Passenger(i);
             Builder builder = new ConcreteBuilder(i);
             Director director = new Director(builder);
-            director.Construct(random.Next(20),random.Next(2)==1);
+            director.ConstructBus(random.Next(20),random.Next(2)==1);
             foreach (var j in builder.GetBusPassengers())
             {
                 Console.WriteLine(j);
@@ -39,6 +39,12 @@ public class BusTrip
             return;
         }
 
-        Console.WriteLine("Count of bus passengers " + boardBus.BoardPassenger() + ", driver is ready");
+        if (busArray.Count <= 30)
+        {
+            Console.WriteLine("Count of bus passengers " + boardBus.BoardPassenger() + ", driver is ready");
+        }
+
+
     }
+    
 }

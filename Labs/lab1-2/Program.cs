@@ -12,7 +12,6 @@ class Project
 
          taxiDriver.SetLicense("B");
          Console.WriteLine(taxiDriver.Driver.License);
-         busDriver.SetLicense("D");
          Console.WriteLine(busDriver.Driver.License);
          Console.WriteLine("##################");
          
