@@ -9,6 +9,7 @@ public abstract class Builder
     public abstract void BuildBusAdult(int age,bool preferential);
     public abstract void BuildTaxiChild(int age);
     public abstract void BuildTaxiAdult(int age);
-    public abstract List<string> GetBusPassengers();
     public abstract List<string> GetTaxiPassengers();
+    public abstract List<string> GetBusPassengers();
+    
 }

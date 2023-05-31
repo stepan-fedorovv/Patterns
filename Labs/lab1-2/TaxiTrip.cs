@@ -14,8 +14,8 @@ public class TaxiTrip
         for (int i = 0; i < taxiPassengerCount; i++)
         {
             Passenger passenger = new Passenger(i);
-            Builder builder = new ConcreteBuilder(i);
-            Director director = new Director(builder);
+            Builder builder = new ConcreteBuilderTaxi(i);
+            TaxiDirector director = new TaxiDirector(builder);
             director.ConstructTaxi(random.Next(20));
             foreach (var j in builder.GetTaxiPassengers())
             {

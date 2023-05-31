@@ -15,8 +15,8 @@ public class BusTrip
         for (int i = 0; i < busPassengerCount; i++)
         {
             Passenger passenger = new Passenger(i);
-            Builder builder = new ConcreteBuilder(i);
-            Director director = new Director(builder);
+            Builder builder = new ConcreteBuilderBus(i);
+            BusDirector director = new BusDirector(builder);
             director.ConstructBus(random.Next(20),random.Next(2)==1);
             foreach (var j in builder.GetBusPassengers())
             {

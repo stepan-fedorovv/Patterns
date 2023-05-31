@@ -12,7 +12,6 @@ class Project
 
          taxiDriver.SetLicense("B");
          Console.WriteLine(taxiDriver.Driver.License);
-         Console.WriteLine(busDriver.Driver.License);
          Console.WriteLine("##################");
          
          //Abstract fabric  

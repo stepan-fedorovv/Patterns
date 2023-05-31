@@ -2,15 +2,14 @@
 
 namespace Lab_1.lab1;
 
-public class ConcreteBuilder : Builder
+public class ConcreteBuilderBus : Builder
 {
-    public ConcreteBuilder(int p)
+    public ConcreteBuilderBus(int p)
     {
         Passenger = new Passenger(p);
     }
 
     private Bus _bus = new Bus();
-    private Taxi _taxi = new Taxi();
 
     private Passenger Passenger { get; }
 
@@ -45,33 +44,24 @@ public class ConcreteBuilder : Builder
         }
     }
 
-
-
-    public override void BuildTaxiChild(int age)
-    {
-        if (age <= 6)
-        {
-            _taxi.Add(String.Format("Taxi:\n Passenger ID: {0},Passenger age: {1}, need baby chair",Passenger.Id,age));
-            return;
-        }
-    }
-
     public override void BuildTaxiAdult(int age)
     {
-        if (age > 6)
-        {
-            _taxi.Add(String.Format("Taxi:\n Passenger ID: {0}, Passenger age: {1}",Passenger.Id,age));
-            return;
-        }
+        throw new NotImplementedException();
+    }
+    
+    public override void BuildTaxiChild(int age)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override List<string> GetTaxiPassengers()
+    {
+        throw new NotImplementedException();
     }
 
     public override List<string> GetBusPassengers()
     {
         return _bus.GetArr();
     }
-
-    public override List<string> GetTaxiPassengers()
-    {
-        return _taxi.GetArr();
-    }
+    
 }
